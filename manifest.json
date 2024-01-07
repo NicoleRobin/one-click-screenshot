@@ -8,22 +8,14 @@
     "32": "images/icon-32.png"
   }, 
   "action": {
-    "default_title": "click me"
+    "default_title": "One click screen shot!"
   }, 
   "permissions": [
-    "desktopCapture", 
-    "tabs", 
+    "contextMenus", 
+    "activeTab", 
     "downloads"
   ],
   "background": {
-    "service_worker": "background.js"
-  }, 
-  "content_scripts": [
-    {
-      "js": ["scripts/content.js"],
-      "matches": [
-        "http://*/*", "https://*/*"
-      ]
-    }
-  ] 
+    "service_worker": "service_worker.js"
+  } 
 }
