@@ -8,7 +8,7 @@
     "32": "images/icon-32.png"
   }, 
   "action": {
-    "default_title": "click me"   // optional, shown in tooltip
+    "default_title": "click me"
   }, 
   "permissions": [
     "desktopCapture", 
@@ -22,8 +22,7 @@
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*"
+        "http://*/*", "https://*/*"
       ]
     }
   ] 
